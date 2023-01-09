@@ -1,0 +1,11 @@
+.mySwiper {
+  width: 90%;
+  margin: 0 auto;
+}
+.swiper-button-prev {
+  color: red !important;
+}
+
+.swiper-button-next {
+  color: #000;
+}

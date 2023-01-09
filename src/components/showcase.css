@@ -1,0 +1,12 @@
+.showcaseWrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+.box {
+  width: 50%;
+}
+.box img {
+  width: 100%;
+}

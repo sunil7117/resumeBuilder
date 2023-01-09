@@ -1,0 +1,95 @@
+.products {
+  width: 90%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.products h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px 0;
+}
+.productMenu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 40px 0;
+}
+.productMenuList {
+  padding: 2px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid white;
+}
+.productMenuList:hover {
+  border-bottom: 3px solid green;
+  cursor: pointer;
+}
+.productBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 auto;
+}
+.productBox {
+  width: 270px;
+}
+.productImg img {
+  width: 100%;
+}
+.productText {
+  margin: 8px 0;
+  font-size: 18px;
+  text-align: center;
+}
+.price {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.productImg {
+  position: relative;
+  cursor: pointer;
+}
+.productNodification {
+  display: none;
+  gap: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  justify-content: center;
+}
+.productImg:hover .productNodification {
+  display: flex;
+  animation: downup 1s forwards;
+}
+@keyframes downup {
+  from {
+    bottom: 0;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.title {
+  cursor: pointer;
+}
+.circle:hover {
+  background-color: green;
+}
+.productIcon {
+  transition: all 0.3s ease-out;
+  /* transform: rotate(-360deg); */
+}
+.circle:hover .productIcon {
+  transform: rotate(360deg);
+}

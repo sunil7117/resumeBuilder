@@ -17,8 +17,8 @@
   flex-direction: column;
   justify-content: center;
 }
-.footerTopleft h1 {
-  font-size: 48px;
+.footerTopleft .logo {
+  width: 150px;
   margin-bottom: 20px;
 }
 .footerTopMiddle {

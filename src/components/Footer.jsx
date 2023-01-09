@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footerwrapper">
         <div className="footerTop">
           <div className="footerTopleft">
-            <h1>OGANI</h1>
+            <img className="logo" src="/assets/img/logo.png" alt="" />
             <address>
               Address: 60-49 Road 11378 New York
               <br /> Phone: +65 11.188.888 <br />
@@ -60,9 +60,12 @@ const Footer = () => {
         <hr className="horizontal"></hr>
         <div className="footerBottom">
           <div className="footerBottomleft">
-            Copyright ©2023 All rights reserved | This template is made with{" "}
-            <ImHeart />
-            by <span>Colorlib </span>
+            <div>
+              Copyright ©2023 All rights reserved | This template is made with
+              <ImHeart />
+              by
+              <span> Colorlib</span>.
+            </div>
           </div>
           <div className="footerBottomRight">
             <img src="/assets/img/payment-item.png" />
