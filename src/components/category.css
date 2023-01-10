@@ -31,10 +31,10 @@ ul {
   cursor: pointer;
 }
 .menuItem:hover {
-  color: greenyellow;
+  color: #7fad39;
 }
 .active {
-  color: greenyellow;
+  color: #7fad39;
 }
 .categoryTopSubmenus {
   position: absolute;
@@ -54,7 +54,7 @@ ul {
   display: block;
 }
 .categoryTopSubmenu:hover {
-  color: greenyellow;
+  color: #7fad39;
 }
 /* -------------------------------------------------------- */
 .categoryTopRight {
@@ -105,7 +105,7 @@ ul {
 }
 
 .dropDownMenu {
-  background-color: greenyellow;
+  background-color: #7fad39;
   display: flex;
   gap: 20px;
   padding: 12px;
@@ -144,7 +144,8 @@ ul {
 .dropDownMenuList {
   font-size: 18px;
   font-weight: 400;
-  padding: 9px 0;
+  margin: 12px 0;
+  padding: 3px 0;
   cursor: pointer;
 }
 /* ----------------- */
@@ -242,7 +243,8 @@ text2 {
   margin-bottom: 20px;
 }
 .shop {
-  background-color: greenyellow;
+  background-color: #7fad39;
+  cursor: pointer;
   color: white;
   font-weight: 900;
   padding: 10px 30px;
