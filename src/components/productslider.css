@@ -1,0 +1,45 @@
+.carousel {
+  position: relative;
+}
+.carouselInner {
+  width: 70%;
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  justify-content: center;
+  border: 5px solid red;
+}
+.box0 {
+  transform: translateX(-200px);
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: greenyellow;
+}
+.carouselNext,
+.carouselPrev {
+  position: absolute;
+}
+.carouselNext {
+  left: 0;
+  top: 40%;
+}
+
+.carouselPrev {
+  right: 0;
+  top: 40%;
+}

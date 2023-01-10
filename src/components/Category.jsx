@@ -8,7 +8,7 @@ import { IoIosCall } from "react-icons/io";
 import { useState } from "react";
 
 const Category = () => {
-  const [hide, setHide] = useState(true);
+  const [hide, setHide] = useState(false);
   const handleMenuShow = () => {
     setHide(!hide);
   };
@@ -104,6 +104,14 @@ const Category = () => {
           </div>
           <div className="categoryBottomRightBottom">
             <img src="/assets/img/hero/banner.jpg" alt="" />
+            <div className="heroText">
+              <p className="text1">FRUIT FRESH</p>
+              <h2 className="textHeading">
+                Vegetable <br></br>100% Organic
+              </h2>
+              <p className="text2">Free Pickup and Delivery Available</p>
+              <button className="shop">SHOP NOW</button>
+            </div>
           </div>
         </div>
       </div>

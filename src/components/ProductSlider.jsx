@@ -5,15 +5,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 
-const Carousel = () => {
+const ProductSlider = () => {
   return (
     <Swiper
       slidesPerView={4}
+      spaceBetween={30}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
       }}
-      spaceBetween={5}
       loop={true}
       navigation={true}
       modules={[Autoplay, Navigation]}
@@ -43,4 +43,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ProductSlider;

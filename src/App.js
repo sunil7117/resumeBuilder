@@ -1,3 +1,4 @@
+import ProductSlider from "./components/ProductSlider";
 import Home from "./pages/Home";
 
 function App() {

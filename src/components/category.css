@@ -103,11 +103,12 @@ ul {
   width: 250px;
   position: relative;
 }
+
 .dropDownMenu {
   background-color: greenyellow;
   display: flex;
   gap: 20px;
-  padding: 20px;
+  padding: 12px;
   color: white;
   align-items: center;
   cursor: pointer;
@@ -129,6 +130,16 @@ ul {
 .dropDownMenuset {
   padding: 10px 20px;
   text-transform: capitalize;
+  animation: updown 1s ease-in;
+  /* name duration timing-function delay iteration-count direction fill-mode */
+}
+@keyframes updown {
+  0% {
+    border: 0;
+  }
+  100% {
+    border: 100%;
+  }
 }
 .dropDownMenuList {
   font-size: 18px;
@@ -206,4 +217,34 @@ ul {
 }
 .categoryBottomRightBottom {
   margin-top: 50px;
+  position: relative;
+}
+.heroText {
+  position: absolute;
+  bottom: 30%;
+  top: 20%;
+  left: 10%;
+}
+.text1,
+text2 {
+  color: green;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.textHeading {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.text2 {
+  color: black;
+  margin-bottom: 20px;
+}
+.shop {
+  background-color: greenyellow;
+  color: white;
+  font-weight: 900;
+  padding: 10px 30px;
+  border: none;
 }

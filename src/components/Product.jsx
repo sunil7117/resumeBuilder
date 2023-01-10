@@ -8,7 +8,7 @@ const Product = () => {
       <h1>Featured Product</h1>
       <div className="productWrapper">
         <ul className="productMenu">
-          <li className="productMenuList">All</li>
+          <li className="productMenuList actives">All</li>
           <li className="productMenuList">Oranges</li>
           <li className="productMenuList">Fresh Meat</li>
           <li className="productMenuList">Vegetable</li>

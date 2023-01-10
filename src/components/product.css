@@ -27,6 +27,9 @@
   border-bottom: 3px solid green;
   cursor: pointer;
 }
+.actives {
+  border-bottom: 3px solid green;
+}
 .productBoxes {
   display: flex;
   flex-wrap: wrap;
