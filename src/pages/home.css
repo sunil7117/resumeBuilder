@@ -1,0 +1,14 @@
+.blogs {
+  width: 90%;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+.blogs h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px 0;
+}
+.blogWrapper {
+  display: flex;
+  gap: 40px;
+}

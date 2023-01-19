@@ -6,9 +6,10 @@ import { GoThreeBars } from "react-icons/go";
 import { GrDown } from "react-icons/gr";
 import { IoIosCall } from "react-icons/io";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Category = () => {
-  const [hide, setHide] = useState(false);
+const Category = ({ page }) => {
+  const [hide, setHide] = useState(page === "home" ? true : false);
   const handleMenuShow = () => {
     setHide(!hide);
   };
@@ -19,7 +20,9 @@ const Category = () => {
           <img src="/assets/img/logo.png" alt="" />
         </div>
         <ul className="categoryTopCenter">
-          <li className="menuItem active">Home</li>
+          <Link to="/" className="routerLinks">
+            <li className="menuItem">Home</li>
+          </Link>
           <li className="menuItem">Shop</li>
           <li className="menuItem">
             Pages
@@ -30,8 +33,12 @@ const Category = () => {
               <li className="categoryTopSubmenu">blog details</li>
             </ul>
           </li>
-          <li className="menuItem">Blog</li>
-          <li className="menuItem">Contact</li>
+          <Link to="/blog" className="routerLinks">
+            <li className="menuItem">Blog</li>
+          </Link>
+          <Link to="/contact" className="routerLinks">
+            <li className="menuItem">Contact</li>
+          </Link>
         </ul>
         <div className="categoryTopRight">
           <div className="categoryTopRightIcons">
@@ -55,66 +62,71 @@ const Category = () => {
           </div>
         </div>
       </div>
-      <div className="categoryBottom">
-        <div className="categoryBottomLeft">
-          <div className="dropDownMenuTop">
-            <div className="dropdownMenus">
-              <div className="dropDownMenu" onClick={handleMenuShow}>
-                <GoThreeBars className="bars" />
-                <span> All departments</span>
-                <GrDown className="down" />
-              </div>
-              <ul className={hide === true ? "dropHide" : "dropDownMenuset"}>
-                <li className="dropDownMenuList">Fresh meat</li>
-                <li className="dropDownMenuList">vegetables</li>
-                <li className="dropDownMenuList">fruit & nut gifts</li>
-                <li className="dropDownMenuList">fresh berries</li>
-                <li className="dropDownMenuList">ocean foods</li>
-                <li className="dropDownMenuList">butter & eggs</li>
-                <li className="dropDownMenuList">fastfood</li>
-                <li className="dropDownMenuList">fresh onion</li>
-                <li className="dropDownMenuList">papaya & cripss</li>
-                <li className="dropDownMenuList">oatmeal</li>
-                <li className="dropDownMenuList">fresh bananas</li>
-              </ul>
-            </div>
+      <div className="categoryCenter">
+        <div className="categoryCenterLeft">
+          <div className="dropdown" onClick={handleMenuShow}>
+            <GoThreeBars />
+            <span>All departments</span>
+            <GrDown />
           </div>
+          <ul className={hide ? "dropdownMenu" : "hide"}>
+            <li className="dropdownMenuList">Fresh meat</li>
+            <li className="dropdownMenuList">vegetables</li>
+            <li className="dropdownMenuList">Fresh meat</li>
+            <li className="dropdownMenuList">vegetables</li>
+            <li className="dropdownMenuList">Fresh meat</li>
+            <li className="dropdownMenuList">vegetables</li>
+            <li className="dropdownMenuList">Fresh meat</li>
+            <li className="dropdownMenuList">vegetables</li>
+            <li className="dropdownMenuList">Fresh meat</li>
+            <li className="dropdownMenuList">vegetables</li>
+            <li className="dropdownMenuList">Fresh meat</li>
+          </ul>
         </div>
-        <div className="categoryBottomRight">
-          <div className="categoryBottomRightTop">
-            <div className="categoryBottomRightLeft">
-              <div className="search">
-                <select>
-                  <option value="">All categories</option>
-                  <option value="">two</option>
-                </select>
-                <input type="text" placeholder="What do you need?" />
-                <button>Search</button>
-              </div>
-            </div>
-            <div className="categoryBottomRightRight">
-              <div className="callIcon">
-                <IoIosCall className="calls" />
-              </div>
-              <div className="support">
-                <div className="call">+65 11.188.888</div>
-                <div className="text">support 24/7 time</div>
-              </div>
+        <div className="categoryCenterRight">
+          <div className="categoryCenterRightOne">
+            <div className="categoryCenterRightOnes">
+              <select name="" id="" className="select">
+                <option value="" selected>
+                  all categories
+                </option>
+              </select>
+              <input
+                className="input"
+                type="text"
+                placeholder="What do  you need?"
+              />
+              <button className="button">Search</button>
             </div>
           </div>
-          <div className="categoryBottomRightBottom">
-            <img src="/assets/img/hero/banner.jpg" alt="" />
-            <div className="heroText">
-              <p className="text1">FRUIT FRESH</p>
-              <h2 className="textHeading">
-                Vegetable <br></br>100% Organic
-              </h2>
-              <p className="text2">Free Pickup and Delivery Available</p>
-              <button className="shop">SHOP NOW</button>
+          <div className="categoryCenterRightTwo">
+            <div className="calls">
+              <IoIosCall />
+            </div>
+            <div className="num">
+              <span>+65 11.188.888</span> <br />
+              support 24/7 time
             </div>
           </div>
         </div>
       </div>
+      {page === "home" && (
+        <div className="categoryBottom">
+          <div className="categoryBottomLeft"></div>
+          <div className="categoryBottomRight">
+            <img src="/assets/img/hero/banner.jpg" alt="" />
+            <div className="categoryBottomRightText">
+              <p className="fruit">fruit fresh</p>
+              <h1>
+                vegetable <br />
+                100% Organic
+              </h1>
+              <p className="free">Free pickup and delivery availble</p>
+              <button>SHOP NOW</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

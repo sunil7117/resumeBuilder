@@ -43,9 +43,9 @@ ul {
   text-transform: capitalize;
   font-size: 18px;
   width: 150px;
-  background-color: black;
   font-weight: 500;
   display: none;
+  background-color: black;
 }
 .categoryTopSubmenu {
   padding: 10px;
@@ -91,162 +91,142 @@ ul {
   font-weight: 800;
 }
 /* ---------------------------- */
+.categoryCenter {
+  display: flex;
+}
+.categoryCenterLeft {
+  flex: 1;
+  position: relative;
+}
+.dropdown {
+  width: 230px;
+  position: relative;
+  background-color: #7fad39;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.dropdown span {
+  font-weight: bold;
+}
+.dropdownMenu {
+  width: 230px;
+  padding: 0px 14px;
+  border: 1px solid black;
+  position: absolute;
+  background-color: white;
+  /* set transition effect */
+}
+.hide {
+  display: none;
+}
+.dropdownMenuList {
+  margin: 15px 0;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.categoryCenterRight {
+  flex: 3;
+  display: flex;
+}
+.categoryCenterRightOne {
+  flex: 3;
+}
+.categoryCenterRightOnes {
+  border: 1px solid #f5f5f5;
+  width: 90%;
+  display: flex;
+}
+.categoryCenterRightOnes .select,
+.input,
+button {
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+}
+.categoryCenterRightOnes select {
+  flex: 1;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.categoryCenterRightOnes input {
+  flex: 2;
+  font-size: 16px;
+}
+.categoryCenterRightOnes button {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 16px;
+  color: white;
+  background-color: #7fad39;
+}
+.categoryCenterRightTwo {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+.calls {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: green;
+  font-size: 20px;
+}
+.num span {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* ---------------------------- */
 .categoryBottom {
   display: flex;
-  margin-top: 0px;
 }
 .categoryBottomLeft {
   flex: 1;
 }
-.dropdownMenus {
-  border: 1px solid #f5f5f5;
-  width: 250px;
-  position: relative;
-}
-
-.dropDownMenu {
-  background-color: #7fad39;
-  display: flex;
-  gap: 20px;
-  padding: 12px;
-  color: white;
-  align-items: center;
-  cursor: pointer;
-}
-.bars {
-  font-size: 18px;
-}
-.dropDownMenu span {
-  font-weight: bolder;
-  font-size: 20px;
-}
-.down {
-  color: white;
-  font-size: 10px;
-}
-.dropHide {
-  display: none;
-}
-.dropDownMenuset {
-  padding: 10px 20px;
-  text-transform: capitalize;
-  animation: updown 1s ease-in;
-  /* name duration timing-function delay iteration-count direction fill-mode */
-}
-@keyframes updown {
-  0% {
-    border: 0;
-  }
-  100% {
-    border: 100%;
-  }
-}
-.dropDownMenuList {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 12px 0;
-  padding: 3px 0;
-  cursor: pointer;
-}
-/* ----------------- */
 .categoryBottomRight {
+  margin: 50px 0;
   flex: 3;
-}
-.categoryBottomRightTop {
-  display: flex;
-}
-.categoryBottomRightLeft {
-  flex: 2;
-}
-.search {
-  width: 100%;
-  border: 1px solid #f5f5f5;
-}
-.search select {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 15px 20px;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
-  border-right: 1px solid #f5f5f5;
-  outline: none;
-}
-.search input {
-  font-size: 16px;
-  padding: 15px 10px;
-  outline: none;
-  border: none;
-  width: 49%;
-}
-.search button {
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 15px 20px;
-  border: none;
-}
-
-.categoryBottomRightRight {
-  flex: 1;
-  display: flex;
-  gap: 15px;
-  justify-content: flex-end;
-}
-.callIcon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.calls {
-  color: green;
-  font-size: 20px;
-}
-.support {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.call {
-  font-weight: bold;
-  font-size: 20px;
-}
-.categoryBottomRightBottom {
-  margin-top: 50px;
   position: relative;
 }
-.heroText {
+.categoryBottomRight img {
+  width: 100%;
+}
+.categoryBottomRightText {
   position: absolute;
-  bottom: 30%;
-  top: 20%;
+  top: 25%;
   left: 10%;
+  bottom: 50%;
 }
-.text1,
-text2 {
-  color: green;
-  font-weight: 900;
-  margin-bottom: 20px;
+.categoryBottomRightText .fruit {
+  font-size: 18px;
+  font-weight: bold;
+  color: #7fad39;
+  text-transform: uppercase;
 }
-.textHeading {
+.categoryBottomRightText h1 {
+  margin: 10px 0;
   font-size: 50px;
-  line-height: 1;
-  font-weight: 900;
-  margin-bottom: 20px;
+  font-weight: bolder;
 }
-.text2 {
-  color: black;
-  margin-bottom: 20px;
+.categoryBottomRightText .free {
+  font-size: 16px;
 }
-.shop {
+.categoryBottomRightText button {
   background-color: #7fad39;
-  cursor: pointer;
-  color: white;
-  font-weight: 900;
+  margin-top: 10px;
   padding: 10px 30px;
-  border: none;
+  color: white;
+  font-weight: bolder;
 }
+/* ---------------------------- */

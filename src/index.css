@@ -1,0 +1,25 @@
+.routerLinks {
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (min-width: 576px) {
+  .homeWrapper > h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bg {
+    background-color: green;
+  }
+}
+@media screen and (min-width: 992px) {
+  .homeWrapper > h1 {
+    font-size: 72px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bg {
+    background-color: green;
+  }
+}
