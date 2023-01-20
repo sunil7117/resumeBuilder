@@ -1,0 +1,83 @@
+.shoppingWrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+.shoppingTop {
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+  grid-column-gap: 30px;
+}
+.shoppingTopLeft {
+  flex: 1;
+}
+.shoppingTopLeft img {
+  width: 100%;
+}
+.shoppingTopRight {
+  flex: 1;
+}
+.heading {
+  margin-bottom: 15px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.rating {
+  margin: 20px 0;
+}
+.prices {
+  color: red;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.details {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.cartSettings {
+  display: flex;
+  gap: 10px;
+  margin: 50px 0;
+}
+.cartSettings button {
+  background-color: inherit;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.count {
+  background-color: #f5f5f5;
+}
+.carts {
+  background-color: #7fad39;
+}
+.countValue {
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  width: 20px;
+}
+.carts button {
+  font-weight: bold;
+  color: white;
+}
+.like {
+  background-color: #f5f5f5;
+}
+.stock {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+}
+.sheading {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+.sdesc {
+  padding: 10px 0;
+  font-size: 18px;
+}
+.sdescAdd {
+  color: red;
+}

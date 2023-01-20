@@ -14,7 +14,21 @@ const Home = () => {
       <Header />
       <Category page="home" />
       <Carousel />
-      <Product />
+
+      <div className="products">
+        <h1>Featured Product</h1>
+        <div className="productWrapper">
+          <ul className="productMenu">
+            <li className="productMenuList actives">All</li>
+            <li className="productMenuList">Oranges</li>
+            <li className="productMenuList">Fresh Meat</li>
+            <li className="productMenuList">Vegetable</li>
+            <li className="productMenuList">FastFood</li>
+          </ul>
+          <Product />
+        </div>
+      </div>
+
       <Showcase />
       <div className="blogs">
         <h1>From The Blog</h1>

@@ -27,8 +27,13 @@ const Category = ({ page }) => {
           <li className="menuItem">
             Pages
             <ul className="categoryTopSubmenus ">
-              <li className="categoryTopSubmenu">shop details</li>
-              <li className="categoryTopSubmenu">shopping cart</li>
+              <Link to="/shoppingdetail">
+                <li className="categoryTopSubmenu">shop details</li>
+              </Link>
+              <Link to="/cart">
+                <li className="categoryTopSubmenu">shopping cart</li>
+              </Link>
+
               <li className="categoryTopSubmenu">check out</li>
               <li className="categoryTopSubmenu">blog details</li>
             </ul>

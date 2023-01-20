@@ -1,5 +1,5 @@
 .products {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .products h1 {
@@ -36,7 +36,7 @@
   margin: 0 auto;
 }
 .productBox {
-  width: 270px;
+  width: 250px;
 }
 .productImg img {
   width: 100%;

@@ -2,8 +2,12 @@ import React from "react";
 import Category from "../components/Category";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { FaRegComment } from "react-icons/fa";
+import { IoMdCall } from "react-icons/io";
 import Hero from "../components/Hero";
 import "./contact.css";
+import { BsClock, BsEnvelope } from "react-icons/bs";
+import { GoLocation } from "react-icons/go";
 const Contact = ({ activePage }) => {
   return (
     <div className="contactWrapper">
@@ -12,7 +16,9 @@ const Contact = ({ activePage }) => {
       <Hero active={activePage} />
       <div className="contactDetails">
         <div className="cantactDetail">
-          <div className="contactDetailIcon">call</div>
+          <div className="contactDetailIcon">
+            <IoMdCall className="contactDetailIcons" />
+          </div>
           <div className="contactDetailText">
             <div className="contactDetailHeading">
               <h2>Phone</h2>
@@ -21,7 +27,9 @@ const Contact = ({ activePage }) => {
           </div>
         </div>
         <div className="cantactDetail">
-          <div className="contactDetailIcon">call</div>
+          <div className="contactDetailIcon">
+            <GoLocation className="contactDetailIcons" />
+          </div>
           <div className="contactDetailText">
             <div className="contactDetailHeading">
               <h2>Address </h2>
@@ -30,7 +38,9 @@ const Contact = ({ activePage }) => {
           </div>
         </div>
         <div className="cantactDetail">
-          <div className="contactDetailIcon">call</div>
+          <div className="contactDetailIcon">
+            <BsClock className="contactDetailIcons" />
+          </div>
           <div className="contactDetailText">
             <div className="contactDetailHeading">
               <h2>Open Timing</h2>
@@ -39,7 +49,9 @@ const Contact = ({ activePage }) => {
           </div>
         </div>
         <div className="cantactDetail">
-          <div className="contactDetailIcon">call</div>
+          <div className="contactDetailIcon">
+            <BsEnvelope className="contactDetailIcons" />
+          </div>
           <div className="contactDetailText">
             <div className="contactDetailHeading">
               <h2>Email</h2>

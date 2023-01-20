@@ -1,0 +1,10 @@
+.cartWrapper {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  background-color: red;
+  grid-template-columns: 6fr 2fr 2fr 2fr;
+}
+
+.cartHeading {
+}

@@ -4,7 +4,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
-const BlogDetails = () => {
+const BlogDetails = ({ activePage }) => {
+  alert(activePage);
   return (
     <div>
       <Header />
