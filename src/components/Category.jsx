@@ -27,17 +27,19 @@ const Category = ({ page }) => {
           <li className="menuItem">
             Pages
             <ul className="categoryTopSubmenus ">
-              <Link to="/shoppingdetail">
+              <Link to="/shoppingdetail" className="routerLinks">
                 <li className="categoryTopSubmenu">shop details</li>
               </Link>
-              <Link to="/cart">
+              <Link to="/cart" className="routerLinks">
                 <li className="categoryTopSubmenu">shopping cart</li>
               </Link>
 
-              <Link to="/checkout">
+              <Link to="/checkout" className="routerLinks">
                 <li className="categoryTopSubmenu">check out</li>
               </Link>
-              <li className="categoryTopSubmenu">blog details</li>
+              <Link to="/blog" className="routerLinks">
+                <li className="categoryTopSubmenu">blog details</li>
+              </Link>
             </ul>
           </li>
           <Link to="/blog" className="routerLinks">
