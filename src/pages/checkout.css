@@ -1,0 +1,92 @@
+.checkout {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.coupon p {
+  margin: 20px 0;
+  font-size: 18px;
+  padding: 8px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-top: 1px solid black;
+}
+.checkout .bill {
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+.checkouts {
+  margin: 40px 0 0 0;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: 7fr 5fr;
+}
+.grid {
+  display: grid;
+}
+.grid-6 {
+  grid-template-columns: 6fr 6fr;
+}
+.grid-12 {
+  grid-template-columns: 12fr;
+}
+.grid-gap {
+  grid-gap: 40px;
+}
+.mark {
+  color: red;
+}
+.w-100 {
+  width: 100%;
+}
+label {
+  display: inline-block;
+  margin: 15px 0;
+  font-size: 20px;
+  text-align: left;
+}
+.formInput {
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #f5f5f5;
+}
+.checkbox {
+  margin-right: 20px;
+}
+.orders {
+}
+.order {
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+.ordertitle {
+  font-weight: bold;
+  font-size: 22px !important;
+}
+.orderdesc {
+  font-size: 22px;
+}
+.padding {
+  padding: 8px 0;
+}
+.porder {
+  margin: 0;
+}
+.order div {
+  font-size: 18px;
+}
+.w-100 p {
+  font-size: 18px;
+}
+.place {
+  padding: 10px 0;
+  color: white;
+  font-size: 24px;
+  background-color: #7fad39;
+  font-weight: bold;
+}
+.grid div:nth-of-type(2) {
+  text-align: end;
+}

@@ -74,3 +74,26 @@ export const blogPage = [
     img: "/assets/img/blog/blog-6.jpg",
   },
 ];
+export const cart = [
+  {
+    img: "/assets/img/cart/cart-1.jpg",
+    title: "Vegetable's Package",
+    priceper: "55.00",
+    quantity: 2,
+    total: "110.00",
+  },
+  {
+    img: "/assets/img/cart/cart-2.jpg",
+    title: "Fresh Garden Vegetable",
+    priceper: "39.00",
+    quantity: 1,
+    total: "39.00",
+  },
+  {
+    img: "/assets/img/cart/cart-3.jpg",
+    title: "organic Bananas",
+    priceper: "20.00",
+    quantity: 3,
+    total: "60.00",
+  },
+];

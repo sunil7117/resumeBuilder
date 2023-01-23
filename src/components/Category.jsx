@@ -34,7 +34,9 @@ const Category = ({ page }) => {
                 <li className="categoryTopSubmenu">shopping cart</li>
               </Link>
 
-              <li className="categoryTopSubmenu">check out</li>
+              <Link to="/checkout">
+                <li className="categoryTopSubmenu">check out</li>
+              </Link>
               <li className="categoryTopSubmenu">blog details</li>
             </ul>
           </li>

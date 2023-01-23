@@ -1,10 +1,105 @@
 .cartWrapper {
   width: 85%;
   margin: 0 auto;
+}
+.cartHeadWrapper,
+.cartDetailWrapper {
   display: grid;
-  background-color: red;
   grid-template-columns: 6fr 2fr 2fr 2fr;
 }
-
+.cartDetailWrapper {
+  padding: 30px 0;
+}
 .cartHeading {
+  font-size: 24px;
+  font-weight: bold;
+}
+.cartDetails p {
+  font-size: 18px;
+  margin-left: 40px;
+}
+.cartDetails > .prices {
+  color: black;
+}
+.cartDetails span {
+  display: inline-block;
+  width: 20px;
+  padding: 13px 0;
+  background-color: #f0f0f0;
+}
+.cartDetails button {
+  padding: 14px 20px;
+}
+.f {
+  display: flex;
+  align-items: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.cartButtonWrapper {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cartButtonWrapper .btnship {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.cartDiscount {
+  display: grid;
+  margin: 30px 0;
+  grid-template-columns: repeat(2, 4fr);
+}
+.gap {
+  grid-gap: 100px;
+}
+.gaps {
+  grid-gap: 50px;
+}
+.gaps input {
+  padding: 10px;
+}
+.discountbtn {
+  background-color: #6f6f6f;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cartTotal {
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+.total {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+.total {
+  font-size: 18px;
+  padding: 10px 0;
+}
+.pricee {
+  color: red;
+  font-weight: bold;
+}
+.totalBtn {
+  display: grid;
+  grid-template-columns: 12fr;
+  padding: 10px 0;
+}
+.totalBtn button {
+  padding: 10px 0;
+  text-transform: uppercase;
+  background-color: #7fad39;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button {
+  border: none;
 }
